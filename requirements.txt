@@ -1,0 +1,6 @@
+gunicorn
+flask
+Flask-JSGlue
+requests
+newrelic
+redis
