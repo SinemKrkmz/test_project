@@ -4,4 +4,3 @@ Flask-JSGlue
 requests
 newrelic
 redis
-json
