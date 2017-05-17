@@ -1,4 +1,5 @@
-from flask import request,json
+import requests
+import json
 from app.helpers.static import SD
 from config import configuration
 
@@ -9,5 +10,5 @@ class ApiUser(object):
 
     def post_panel_login(self, email, phone, password):
         data = {'email': email, 'phone': phone, 'password': password}
-        res = request.post(''.join([configuration.API_URL, 'user/panel-login']), headers=self.headers, data=json.dumps(data))
+        res = requests.post(''.join([configuration.API_URL, 'user/panel-login']), headers=self.headers, data=json.dumps(data))
         return res
