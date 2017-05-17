@@ -1,1 +1,1 @@
-python -m unittest app/test/user.py
+python3.5 -m unittest app/test/user.py
