@@ -10,6 +10,6 @@ class DefaultConfig(object):
         self.SQLALCHEMY_TRACK_MODIFICATIONS = False
         self.IS_PRODUCTION = False
         self.ACCESS_TOKEN_EXPIRE_TIME = 4  # hours
-        self.WTF_CSRF_ENABLED = Fals
+        self.WTF_CSRF_ENABLED = False
 
 configuration = DefaultConfig()
